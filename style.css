@@ -168,6 +168,8 @@ h1, h2, h3, h4 {
   display: flex;
   align-items: center;
   gap: 12px;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .brand-emblem {
@@ -179,6 +181,7 @@ h1, h2, h3, h4 {
   display: grid;
   place-items: center;
   font-size: 1.35rem;
+  flex-shrink: 0;
   box-shadow: 0 6px 14px rgba(37, 77, 64, 0.2);
 }
 
@@ -190,22 +193,22 @@ h1, h2, h3, h4 {
 .brand-name {
   font-family: 'Fraunces', serif;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.18rem;
   color: var(--ink);
   line-height: 1.05;
 }
 
 .brand-sub {
-  font-size: 0.67rem;
+  font-size: 0.64rem;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   color: var(--muted);
 }
 
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 16px;
 }
 
 .nav-menu a {
@@ -1287,6 +1290,25 @@ h1, h2, h3, h4 {
 }
 
 /* Responsive Breakpoints */
+.hero-copy,
+.hero-visual,
+.story-media,
+.story-content,
+.booking-form-col,
+.booking-summary-col {
+  min-width: 0;
+}
+
+@media (max-width: 1120px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: flex;
+  }
+}
+
 @media (max-width: 1024px) {
   .hero-grid,
   .story-grid,
@@ -1306,14 +1328,6 @@ h1, h2, h3, h4 {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .nav-menu {
-    display: none;
-  }
-
-  .mobile-toggle {
-    display: flex;
-  }
-
   .ticket-card {
     position: static;
   }
@@ -1329,6 +1343,12 @@ h1, h2, h3, h4 {
   .hero-trust-row,
   .footer-top {
     grid-template-columns: 1fr;
+  }
+
+  .btn,
+  .top-bar-cta {
+    white-space: normal;
+    text-align: center;
   }
 
   .estimate-nav-pill {
