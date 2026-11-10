@@ -1351,8 +1351,13 @@ h1, h2, h3, h4 {
     text-align: center;
   }
 
-  .estimate-nav-pill {
+  .estimate-nav-pill,
+  .nav-actions .btn-sage {
     display: none;
+  }
+
+  .brand-sub {
+    font-size: 0.58rem;
   }
 
   .badge-top {
