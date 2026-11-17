@@ -1,5 +1,5 @@
 /**
- * HUELLA & BRISA • Spa & Peluquería Canina (V Región, Chile)
+ * PELUQUERÍA CANINA • Spa Canino (V Región, Chile)
  * Calculador interactivo de tarifas por tamaño/manto + Agenda WhatsApp
  * Página creada por Breborn.cl
  */
@@ -284,7 +284,7 @@ function sendWhatsAppBooking() {
   const total = basePrice + extrasTotal;
 
   const lines = [
-    `¡Hola! 👋 Quiero agendar una hora en *HUELLA & BRISA*:`,
+    `¡Hola! 👋 Quiero agendar una hora en *Peluquería Canina*:`,
     ``,
     `🐶 *Perrito:* ${petName} (${petBreed})`,
     `📏 *Tamaño y Manto:* ${SIZE_LABELS[State.size]} • ${COAT_LABELS[State.coat]}`,

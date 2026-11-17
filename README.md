@@ -1,4 +1,4 @@
-# HUELLA & BRISA — Peluquería y Spa Canino (Maqueta Breborn)
+# PELUQUERÍA CANINA — Peluquería y Spa Canino (Maqueta Breborn)
 
 Maqueta web interactiva desarrollada para peluquerías caninas y centros de estética para mascotas en **Viña del Mar y Valparaíso, Chile**.
 
